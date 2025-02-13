@@ -36,14 +36,18 @@ function App() {
             <Editor 
             value={code}
             placeholder='Write your code here'
+            className='editor'
             onValueChange={(code) => setCode(code)}
             highlight={code => prismjs.highlight(code, prismjs.languages.javascript, "javascript")}
             padding={10}
             style={{
+              height: "88%",
+              width: "100%",
               fontFamily: 'Fire code Fire Mono',
               border: "none",
               color: "white",
               borderRadius: "5px",
+              marginBottom: "1rem"
             }}
             />
           </div>
