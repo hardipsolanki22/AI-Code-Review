@@ -1,0 +1,74 @@
+html,
+#root,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  height: 100%;
+}
+main h1 {
+  font-family: 'Poppins', sans-serif; 
+  font-size: 2.5rem; 
+  font-weight: 600; 
+  color: #333; 
+  margin-bottom: 1rem;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+.left {
+  flex-basis: 50%;
+  background-color: #282c34;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.code {
+  padding: 1rem;
+}
+
+.right {
+  flex-basis: 50%;
+  background-color: #383c44;
+  border-radius: 1rem;
+  overflow: auto;
+  padding: 1rem;
+  color: #e0e0e0;
+  font-size: 1rem
+
+}
+
+.review {
+  position: absolute;
+  bottom: 1rem;
+  right: 0.5rem;
+}
+
+.review button{
+  background-color: violet;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+.review button:focus{
+  border: none;  
+}
+
+@media(max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
